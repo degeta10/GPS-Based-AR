@@ -32,3 +32,37 @@ F:\Unity Projects\GPS Based\obj\Debug\Assembly-CSharp.dll
 F:\Unity Projects\GPS Based\obj\Debug\Assembly-CSharp.pdb
 F:\Unity Projects\GPS Based\Temp\bin\Debug\Vuforia.UnityExtensions.dll
 F:\Unity Projects\GPS Based\Temp\bin\Debug\Vuforia.UnityExtensions.xml
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\Assembly-CSharp.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\Assembly-CSharp.pdb
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\nunit.framework.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEditor.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.Analytics.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.HoloLens.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.Networking.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.TestRunner.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.Timeline.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.UI.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\Vuforia.UnityExtensions.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\Mono.Cecil.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\Unity.SerializationLogic.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\Unity.DataContract.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\ExCSS.Unity.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\Unity.UNetWeaver.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\Unity.CecilTools.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.xml
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEditor.xml
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.UI.xml
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.Networking.xml
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.TestRunner.xml
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\nunit.framework.xml
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.Timeline.xml
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.Analytics.xml
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\UnityEngine.HoloLens.xml
+F:\Github Repository\GPS_Based_AR\Temp\bin\Debug\Vuforia.UnityExtensions.xml
+F:\Github Repository\GPS_Based_AR\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+F:\Github Repository\GPS_Based_AR\obj\Debug\Assembly-CSharp.dll
+F:\Github Repository\GPS_Based_AR\obj\Debug\Assembly-CSharp.pdb

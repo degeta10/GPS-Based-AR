@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPS_Based_AR", "Assembly-CSharp.csproj", "{BB771FA9-68BD-96C8-FA4D-3367A989ACA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPS_Based_AR", "Assembly-CSharp-Editor.csproj", "{F2753A5F-D0A9-1731-306B-3A735320D096}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB771FA9-68BD-96C8-FA4D-3367A989ACA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB771FA9-68BD-96C8-FA4D-3367A989ACA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB771FA9-68BD-96C8-FA4D-3367A989ACA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB771FA9-68BD-96C8-FA4D-3367A989ACA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2753A5F-D0A9-1731-306B-3A735320D096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2753A5F-D0A9-1731-306B-3A735320D096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2753A5F-D0A9-1731-306B-3A735320D096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2753A5F-D0A9-1731-306B-3A735320D096}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

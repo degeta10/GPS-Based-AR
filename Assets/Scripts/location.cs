@@ -87,7 +87,7 @@ public class location : MonoBehaviour {
 
 		//an origin vector, representing lat,lon of 0,0. 
 
-		Vector3 origin= new Vector3(9.991158f,76.28171f,1);
+		Vector3 origin= new Vector3(originalLatitude,originalLongitude,1);
 		//build a quaternion using euler angles for lat,lon
 		Quaternion rotation= Quaternion.Euler(polar.x,polar.y,0);
 		//transform our reference vector by the rotation. Easy-peasy!
