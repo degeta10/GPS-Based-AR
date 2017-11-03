@@ -4,7 +4,7 @@ First , replace the vuforia license key with yours!
 
 Second,
 
-Go to line "89" in "location.cs" 
+Go to line "90" in "location.cs" 
 
  ---- Vector3 origin= new Vector3(9.991253f,76.28265f,1);
  
