@@ -15,7 +15,7 @@ Enter a radius of around 100 for inital testing.
 
 Build and Test on your phone!
 
-Make sure MobileData and Location is both switch on for high accuracy!
+Make sure MobileData and Location is both switched on for high accuracy!
 
 Thanks
 
