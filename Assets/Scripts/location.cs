@@ -12,7 +12,7 @@ public class location : MonoBehaviour {
     public float originalLatitude;
 	public float originalLongitude;
 	public float radius;
-	public Text text;
+	public Text text,range;
 	Vector3 unityc = new Vector3();
 
 	public GameObject Model;
@@ -21,6 +21,7 @@ public class location : MonoBehaviour {
 	{
 		Instance = this;
 		DontDestroyOnLoad (gameObject);
+		range.text="Finding!!";
 		Model.SetActive (false);
 		StartCoroutine (GetCoordinates());
 	}
@@ -86,7 +87,7 @@ public class location : MonoBehaviour {
 
 		//an origin vector, representing lat,lon of 0,0. 
 
-		Vector3 origin= new Vector3(9.991253f,76.28265f,1);
+		Vector3 origin= new Vector3(9.991158f,76.28171f,1);
 		//build a quaternion using euler angles for lat,lon
 		Quaternion rotation= Quaternion.Euler(polar.x,polar.y,0);
 		//transform our reference vector by the rotation. Easy-peasy!
@@ -109,12 +110,14 @@ public class location : MonoBehaviour {
 		if (distance <= r)
 		{
 			Debug.Log ("In range");
+			range.text="In range";
 			Model.SetActive (true);
 			transform.position = new Vector3(unityc.x,unityc.y,0);
 		}
 		else
 		{
 			Debug.Log ("Not in range");
+			range.text="Not In range";
 			Model.SetActive (false);
 		}
 	}

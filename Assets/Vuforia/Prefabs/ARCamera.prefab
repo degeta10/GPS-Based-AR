@@ -350,8 +350,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLongitude: 0
   currentLatitude: 0
-  originalLatitude: 9.991253
-  originalLongitude: 76.28265
+  originalLatitude: 9.991158
+  originalLongitude: 76.28171
   radius: 100
   text: {fileID: 0}
+  range: {fileID: 0}
   Model: {fileID: 0}
