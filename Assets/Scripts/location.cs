@@ -7,12 +7,12 @@ public class location : MonoBehaviour {
 
 	public static location Instance{ set; get; }
 
-	public float currentLongitude=0f;
-	public float currentLatitude=0f;
+	private float currentLongitude=0f;
+	private float currentLatitude=0f;
     public float originalLatitude;
 	public float originalLongitude;
 	public float radius;
-	public Text text,range;
+	public Text text,range,Distance;
 	Vector3 unityc = new Vector3();
 
 	public GameObject Model;
@@ -30,7 +30,8 @@ public class location : MonoBehaviour {
 	{
 		while (true) 
 		{
-			if (!Input.location.isEnabledByUser) {
+			if (!Input.location.isEnabledByUser)
+			{
 				Debug.Log ("Location is Not enabled by user ");
 				yield break;
 			}
@@ -98,7 +99,7 @@ public class location : MonoBehaviour {
 
 	public void Calc(float xc, float yc, float xp, float yp,float r)
 	{
-		float distance=0f,x=0f,y=0f,r1,r2,r3,c;
+		float distance=0f,x=0f,y=0f,r1,r2,r3,c,diff;
 		float R = 6378.137f;
 		r1 = xc * Mathf.Deg2Rad;
 		r2 = xp * Mathf.Deg2Rad;
@@ -107,16 +108,16 @@ public class location : MonoBehaviour {
 		r3 = Mathf.Sin (x / 2) * Mathf.Sin (x / 2) + Mathf.Cos(r1) * Mathf.Cos(r2) * Mathf.Sin(y/2) * Mathf.Sin(y/2);
 		c = 2 * Mathf.Atan2(Mathf.Sqrt(r3), Mathf.Sqrt(1-r3)); 
 		distance = R * c * 1000f;
+		//diff = distance - radius;
+		Distance.text = "Distance: "+distance.ToString ()+" m";
 		if (distance <= r)
 		{
-			Debug.Log ("In range");
 			range.text="In range";
 			Model.SetActive (true);
 			transform.position = new Vector3(unityc.x,unityc.y,0);
 		}
 		else
-		{
-			Debug.Log ("Not in range");
+		{			
 			range.text="Not In range";
 			Model.SetActive (false);
 		}
