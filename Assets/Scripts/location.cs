@@ -3,27 +3,57 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class location : MonoBehaviour {
-
-	public static location Instance{ set; get; }
+public class location : MonoBehaviour
+{
+	Vector3 unityc = new Vector3();
+	List<string> places = new List<string> (){"Home","Office"};
 
 	private float currentLongitude=0f;
 	private float currentLatitude=0f;
+
+	public static location Instance{ set; get; }
     public float originalLatitude;
 	public float originalLongitude;
 	public float radius;
 	public Text text,range,Distance;
-	Vector3 unityc = new Vector3();
-
 	public GameObject Model;
+	public Dropdown dropdown;
+
+	public void Awake()
+	{
+		Model.SetActive (false);
+		range.text="Finding!!";
+		Distance.text = "Distance: ";
+	}
 
 	public void Start()
 	{
 		Instance = this;
 		DontDestroyOnLoad (gameObject);
-		range.text="Finding!!";
-		Model.SetActive (false);
+		PopulateList ();
 		StartCoroutine (GetCoordinates());
+	}
+
+	void PopulateList() 
+	{		
+		dropdown.AddOptions (places);
+	}
+
+	public void Dropdown_IndexChanged(int index)
+	{
+		switch (index) 
+		{
+		case 0:
+			Debug.Log ("Chose: " + places [0]);
+			originalLatitude = 9.991158f;
+			originalLongitude = 76.28171f;
+			break;
+		case 1:
+			Debug.Log ("Chose: " + places [1]);
+			originalLatitude = 9.991285f;
+			originalLongitude = 76.283507f;
+			break;		
+		}
 	}
 
 	IEnumerator GetCoordinates ()
@@ -99,7 +129,7 @@ public class location : MonoBehaviour {
 
 	public void Calc(float xc, float yc, float xp, float yp,float r)
 	{
-		float distance=0f,x=0f,y=0f,r1,r2,r3,c,diff;
+		float distance=0f,x=0f,y=0f,r1,r2,r3,c;
 		float R = 6378.137f;
 		r1 = xc * Mathf.Deg2Rad;
 		r2 = xp * Mathf.Deg2Rad;
@@ -108,7 +138,6 @@ public class location : MonoBehaviour {
 		r3 = Mathf.Sin (x / 2) * Mathf.Sin (x / 2) + Mathf.Cos(r1) * Mathf.Cos(r2) * Mathf.Sin(y/2) * Mathf.Sin(y/2);
 		c = 2 * Mathf.Atan2(Mathf.Sqrt(r3), Mathf.Sqrt(1-r3)); 
 		distance = R * c * 1000f;
-		//diff = distance - radius;
 		Distance.text = "Distance: "+distance.ToString ()+" m";
 		if (distance <= r)
 		{

@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4114ca95ba12f394a8ad43abfc86745c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mWorldCenterMode: 1
+  mWorldCenterMode: 3
   mWorldCenter: {fileID: 0}
   mCentralAnchorPoint: {fileID: 0}
   mParentAnchorPoint: {fileID: 0}
@@ -355,3 +355,4 @@ MonoBehaviour:
   range: {fileID: 0}
   Distance: {fileID: 0}
   Model: {fileID: 0}
+  dropdown: {fileID: 0}
