@@ -17,7 +17,7 @@ Enter a radius of around 100 for inital testing.
     You can also Enter coordinates for Multiple Location too,
 
      First, 
-        Enter the name of the places in the list. (in location.cs, line 9)
+        Enter the name of the places in the list. (in location.cs, line 8)
 
      Second,
         Go to function Dropdown_IndexChanged() in location.cs.
