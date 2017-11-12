@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class location : MonoBehaviour
 {
-	Vector3 unityc = new Vector3();
 	List<string> places = new List<string> (){"Home","Office"};
 
 	private float currentLongitude=0f;
@@ -15,15 +14,15 @@ public class location : MonoBehaviour
     public float originalLatitude;
 	public float originalLongitude;
 	public float radius;
-	public Text text,range,Distance;
+	public Text range,Distance;
 	public GameObject Model;
 	public Dropdown dropdown;
 
 	public void Awake()
 	{
 		Model.SetActive (false);
-		range.text="Finding!!";
-		Distance.text = "Distance: ";
+		range.text="Getting GPS";
+		Distance.text = " Distance: ";
 	}
 
 	public void Start()
@@ -43,13 +42,11 @@ public class location : MonoBehaviour
 	{
 		switch (index) 
 		{
-		case 0:
-			Debug.Log ("Chose: " + places [0]);
+		case 0:	//Home			
 			originalLatitude = 9.991158f;
 			originalLongitude = 76.28171f;
 			break;
-		case 1:
-			Debug.Log ("Chose: " + places [1]);
+		case 1:	//Office		
 			originalLatitude = 9.991285f;
 			originalLongitude = 76.283507f;
 			break;		
@@ -88,7 +85,6 @@ public class location : MonoBehaviour
 				currentLatitude = Input.location.lastData.latitude;
 				currentLongitude = Input.location.lastData.longitude;
 				Vector2 pass = new Vector2 (currentLatitude,currentLongitude);
-				Vector3 unityc= PolarToCartesian (pass);
 				Calc (originalLatitude, originalLongitude, currentLatitude, currentLongitude, radius);
 			}
 		}
@@ -103,6 +99,7 @@ public class location : MonoBehaviour
 		//this is easier to write and read than sqrt(pow(x,2), pow(y,2))!
 		Vector2 xzLen = new Vector2(point.x,point.z);
 		//xzLen = xzLen.magnitude;
+
 		//atan2 does the magic
 		polar.x = Mathf.Atan2(-point.y,xzLen.x);
 
@@ -117,10 +114,11 @@ public class location : MonoBehaviour
 	Vector3 PolarToCartesian ( Vector2 polar  ){
 
 		//an origin vector, representing lat,lon of 0,0. 
-
 		Vector3 origin= new Vector3(originalLatitude,originalLongitude,1);
+
 		//build a quaternion using euler angles for lat,lon
 		Quaternion rotation= Quaternion.Euler(polar.x,polar.y,0);
+
 		//transform our reference vector by the rotation. Easy-peasy!
 		Vector3 point=rotation*origin;
 		print(point.x+"    "+point.y);
@@ -131,19 +129,19 @@ public class location : MonoBehaviour
 	{
 		float distance=0f,x=0f,y=0f,r1,r2,r3,c;
 		float R = 6378.137f;
+
 		r1 = xc * Mathf.Deg2Rad;
 		r2 = xp * Mathf.Deg2Rad;
 		x = (xp - xc)*Mathf.Deg2Rad;
 		y = (yp - yc)*Mathf.Deg2Rad;
 		r3 = Mathf.Sin (x / 2) * Mathf.Sin (x / 2) + Mathf.Cos(r1) * Mathf.Cos(r2) * Mathf.Sin(y/2) * Mathf.Sin(y/2);
 		c = 2 * Mathf.Atan2(Mathf.Sqrt(r3), Mathf.Sqrt(1-r3)); 
-		distance = R * c * 1000f;
-		Distance.text = "Distance: "+distance.ToString ()+" m";
+		distance = Mathf.RoundToInt(R * c * 1000f);
+		Distance.text = " Distance: "+distance+" m";
 		if (distance <= r)
 		{
 			range.text="In range";
 			Model.SetActive (true);
-			transform.position = new Vector3(unityc.x,unityc.y,0);
 		}
 		else
 		{			
@@ -156,7 +154,6 @@ public class location : MonoBehaviour
 	{  
 		currentLatitude = Input.location.lastData.latitude;
 		currentLongitude = Input.location.lastData.longitude;
-		text.text = "Lat: " + location.Instance.currentLatitude.ToString () + "      Lon: " + location.Instance.currentLongitude.ToString ();
 	}
 
 }﻿
