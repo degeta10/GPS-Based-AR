@@ -26,7 +26,7 @@ public class LocationForMultipleObjects : MonoBehaviour {
 	{	
 		range.text="Initializing";
 		modelno=0;
-		dropdown_value=0;
+		dropdown_value=0;	//By default first option in dropdown is selected
 		modelcount=Model.Length;		
 		Distance.text = " Distance: "+"0 m";
 	}

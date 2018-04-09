@@ -113,8 +113,8 @@ MonoBehaviour:
     y: 0
     width: 270
     height: 357
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -353,19 +353,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\Github Repository\GPS_Based_AR
   m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0e280000
-    m_LastClickedID: 10254
-    m_ExpandedIDs: 0000000008270000182700003c27000098270000cc27000066280000002a0000022a0000042a0000062a000000ca9a3bffffff7f
+    m_SelectedIDs: 66270000
+    m_LastClickedID: 10086
+    m_ExpandedIDs: 0000000018270000282700004c270000a8270000dc270000762800000c2a00000e2a0000102a0000122a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -393,7 +393,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000008270000182700003c27000098270000cc27000066280000002a0000022a0000042a0000062a0000
+    m_ExpandedIDs: 0000000018270000282700004c270000a8270000dc270000762800000c2a00000e2a0000102a0000122a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -509,9 +509,9 @@ MonoBehaviour:
     height: 336
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: e2070000
     m_LastClickedID: 0
-    m_ExpandedIDs: 747afdff327bfdff607cfdff9e81fdff5c82fdff8a83fdff9489fdff528afdff808bfdff5490fdff1291fdff4092fdff9a98fdff5899fdff869afdffc4bcfdff2ebdfdff90c5fdff4ec6fdff7ec7fdff16cefdffd4cefdff04d1fdffd6d4fdffeadcfdff9eddfdffccdefdff20f1fdffcaf1fdfff8f2fdff3269fefff069feff1e6bfeffc470feffbca4feff9ea9feff5caafeff8aabfeff84b4feff42b5feff74b6feffda35ffff0238ffff1249ffff1e64ffff9283ffff5084ffff8485ffff44a4ffff48a9fffffca9ffff2eabffff1afcffff0000000026440000ae440000
+    m_ExpandedIDs: 18fcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -677,7 +677,7 @@ MonoBehaviour:
       width: 2088.9026
       height: 1079.9999
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.29537037
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 617, y: 336}
