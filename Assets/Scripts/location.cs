@@ -8,7 +8,7 @@ public class location : MonoBehaviour
 	List<string> places = new List<string> (){"Home","Office"};
 
 	private float currentLongitude=0f;
-	private float currentLatitude=0f;
+	private float currentLatitude=0f;	
 
 	public static location Instance{ set; get; }
     public float originalLatitude;
@@ -19,7 +19,7 @@ public class location : MonoBehaviour
 	public Dropdown dropdown;
 
 	public void Awake()
-	{
+	{		
 		Model.SetActive (false);
 		range.text="Getting GPS";
 		Distance.text = " Distance: ";
@@ -44,12 +44,13 @@ public class location : MonoBehaviour
 		{
 		case 0:	//Home			
 			originalLatitude = 9.991158f;
-			originalLongitude = 76.28171f;
+			originalLongitude = 76.28171f;			
 			break;
+			
 		case 1:	//Office		
 			originalLatitude = 9.991285f;
-			originalLongitude = 76.283507f;
-			break;		
+			originalLongitude = 76.283507f;			
+			break;			
 		}
 	}
 

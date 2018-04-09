@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8100000}
   - component: {fileID: 11400006}
   - component: {fileID: 11400004}
-  - component: {fileID: 114903058349125512}
+  - component: {fileID: 114649436548375544}
   m_Layer: 0
   m_Name: ARCamera
   m_TagString: Untagged
@@ -337,7 +337,7 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!114 &114903058349125512
+--- !u!114 &114649436548375544
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -345,13 +345,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 405e6f65bfee72647b523b061b00e50f, type: 3}
+  m_Script: {fileID: 11500000, guid: f5012edcef72b0f4db9a80746818a9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalLatitude: 9.991158
-  originalLongitude: 76.28171
-  radius: 100
+  originalLatitude: 0
+  originalLongitude: 0
+  radius: 120
   range: {fileID: 0}
   Distance: {fileID: 0}
-  Model: {fileID: 0}
+  Model:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   dropdown: {fileID: 0}
