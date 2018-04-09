@@ -353,18 +353,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\Github Repository\GPS_Based_AR
   m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 66270000
-    m_LastClickedID: 10086
+    m_SelectedIDs: 1e280000
+    m_LastClickedID: 10270
     m_ExpandedIDs: 0000000018270000282700004c270000a8270000dc270000762800000c2a00000e2a0000102a0000122a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -509,8 +509,8 @@ MonoBehaviour:
     height: 336
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e2070000
-    m_LastClickedID: 0
+    m_SelectedIDs: d0fbffff
+    m_LastClickedID: -1072
     m_ExpandedIDs: 18fcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -652,7 +652,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 1
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
@@ -664,18 +664,18 @@ MonoBehaviour:
       y: 17
       width: 617
       height: 319
-    m_Scale: {x: 0.2953704, y: 0.2953704}
-    m_Translation: {x: 308.5, y: 159.49998}
+    m_Scale: {x: 0.29537037, y: 0.29537037}
+    m_Translation: {x: 308.5, y: 159.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1044.4513
-      y: -539.9999
-      width: 2088.9026
-      height: 1079.9999
+      x: -1044.4514
+      y: -540
+      width: 2088.9028
+      height: 1080
     m_MinimalGUI: 1
   m_defaultScale: 0.29537037
   m_TargetTexture: {fileID: 0}
